@@ -12,7 +12,7 @@ body {
 .people {
   grid-template-columns: repeat(2, 200px);
   justify-content: center;
-  gap: 40px 30px;
+  gap: 20px 10px;
   padding-top: 30px;
   display: grid;
 }
@@ -26,6 +26,7 @@ body {
 .people__person {
   background-color: #fff;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .people__person:hover {
