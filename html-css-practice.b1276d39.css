@@ -23,31 +23,44 @@ body {
   }
 }
 
-.people__person {
+.person {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
-  transition-duration: 1s;
+  transition: transform 1s;
   position: relative;
 }
 
-.people__person:hover {
+.person:hover {
+  z-index: 1;
   background-color: #eee;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
-.people__photo {
+.person:hover .person__img {
+  border-radius: 60px;
+}
+
+.person:hover .person__sport {
+  color: #000;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.person__photo {
   margin-bottom: 8px;
   display: flex;
   position: relative;
 }
 
-.people__img {
+.person__img {
   border-radius: 50%;
   width: 100%;
+  transition: border-radius 1s;
 }
 
-.people__rank {
+.person__rank {
   color: #8b0000;
   background-color: #fff;
   border-radius: 50%;
@@ -61,19 +74,19 @@ body {
   right: 10px;
 }
 
-.people__details {
+.person__details {
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
-.people__name {
+.person__name {
   margin-bottom: 9px;
 }
 
-.people__sport {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
+.person__sport {
+  opacity: 0;
+  transition: all 1s;
+  overflow: hidden;
 }
 /*# sourceMappingURL=html-css-practice.b1276d39.css.map */
