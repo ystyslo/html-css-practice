@@ -24,12 +24,12 @@ body {
 }
 
 .people__person {
+  background-color: #fff;
   border-radius: 10px;
 }
 
 .people__person:hover {
   background-color: #eee;
-  padding: 5px;
 }
 
 .people__photo {
