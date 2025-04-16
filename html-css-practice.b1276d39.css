@@ -34,7 +34,7 @@ body {
   background-color: #eee;
 }
 
-.people__person:hover__sport {
+.people__person:hover .people__person__sport {
   color: #000;
   opacity: 1;
   font-size: 18px;
