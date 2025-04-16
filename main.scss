@@ -21,6 +21,7 @@ margin: 0;
   }
   
   &__person {
+    position: relative;
     padding: 10px;
     background-color: white;
     border-radius: 10px;
@@ -66,10 +67,16 @@ margin: 0;
   }
 
   &__sport {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  &:hover &__sport {
     font-weight: 400;
     font-size: 18px;
     color: #000;
+    opacity: 1;
   }
-
   
 }
