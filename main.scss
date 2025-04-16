@@ -21,10 +21,10 @@ margin: 0;
   }
   
   &__person {
+    background-color: white;
     border-radius: 10px;
 
     &:hover {
-      padding: 5px;
       background-color: #EEEEEE;
     }
   }
