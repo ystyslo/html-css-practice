@@ -34,6 +34,13 @@ body {
   background-color: #eee;
 }
 
+.people__person:hover__sport {
+  color: #000;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .people__photo {
   margin-bottom: 8px;
   display: flex;
@@ -73,12 +80,5 @@ body {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-}
-
-.people:hover .people__sport {
-  color: #000;
-  opacity: 1;
-  font-size: 18px;
-  font-weight: 400;
 }
 /*# sourceMappingURL=html-css-practice.b1276d39.css.map */
