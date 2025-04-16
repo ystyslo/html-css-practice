@@ -23,7 +23,17 @@ body {
   }
 }
 
+.people__person {
+  border-radius: 10px;
+}
+
+.people__person:hover {
+  background-color: #eee;
+  padding: 5px;
+}
+
 .people__photo {
+  margin-bottom: 8px;
   display: flex;
   position: relative;
 }
@@ -47,14 +57,14 @@ body {
   right: 10px;
 }
 
-.people__name {
-  margin: 0 auto;
-}
-
 .people__details {
   flex-direction: column;
   align-items: center;
   display: flex;
+}
+
+.people__name {
+  margin-bottom: 9px;
 }
 
 .people__sport {
