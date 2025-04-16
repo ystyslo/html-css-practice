@@ -15,20 +15,24 @@ margin: 0;
   grid-template-columns: repeat(2, 200px);
   gap: 40px 30px;
   padding-top: 30px;
-
+  
   @media (min-width: 1000px) {
     grid-template-columns: repeat(4, 200px);
   }
   
-  // &__person {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
+  &__person {
+    border-radius: 10px;
+
+    &:hover {
+      padding: 5px;
+      background-color: #EEEEEE;
+    }
+  }
 
   &__photo {
     position: relative;
     display: flex;
+    margin-bottom: 8px;
   }
 
   &__img {
@@ -50,14 +54,14 @@ margin: 0;
     width: 32px;
   }
 
-  &__name {
-    margin: 0 auto;
-  }
-
   &__details {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__name {
+    margin-bottom: 9px;
   }
 
   &__sport {
@@ -65,4 +69,6 @@ margin: 0;
     font-size: 18px;
     color: #000;
   }
+
+  
 }
