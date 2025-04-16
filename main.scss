@@ -19,18 +19,30 @@ margin: 0;
   @media (min-width: 1000px) {
     grid-template-columns: repeat(4, 200px);
   }
+}
   
-  &__person {
-    position: relative;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    transition-duration: 1s;
+.person {
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
 
-    &:hover {
-      transform: scale(1.2);
-      background-color: #EEEEEE;
-    }
+  &:hover {
+    transform: scale(1.1);
+    background-color: #EEEEEE;
+    z-index: 1;
+  }
+
+  &:hover &__img {
+    border-radius: 60px;
+  }
+
+  &:hover &__sport {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    opacity: 1;
   }
 
   &__photo {
@@ -42,6 +54,7 @@ margin: 0;
   &__img {
     width: 100%;
     border-radius: 50%;
+    transition: border-radius 1s;
   }
 
   &__rank {
@@ -69,8 +82,8 @@ margin: 0;
   }
 
   &__sport {
-    font-weight: 400;
-    font-size: 18px;
-    color: #000;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s;
   }
 }
